@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- #level1_1 Alter prüfen -->
+
+    <section class="lev1_1">
+      <form>
+        <label for="age">Age</label>
+        <input type="number" id="age" />
+        <button onclick="checkAge(); return false">Überprüfung</button>
+        <p class="outputAge"></p>
+      </form>
+    </section>
+
+    <!-- #level 1_3 Shisha -->
+
+    <section class="lev1_3">
+      <h2>JavaScript : if else statement</h2>
+      <p>
+        Hier prüfen wir, ob das Alter größer als 18 ist oder nicht. Shisha
+        rauchen darf man nur, wenn man volljährig ist.
+      </p>
+      <form onsubmit="return false">
+        <label for="shisha">Geben Sie Ihr Alter ein:</label>
+        <input type="number" id="shisha" />
+        <button onclick="checkShisha()">Alter</button>
+        <p class="outputShisha"></p>
+      </form>
+    </section>
+
+    <!-- #level 2_3 Differenz -->
+    <section>
+      <h2>Differenz zwischen deiner Zahl und 27</h2>
+      <p>
+        Falls deine Zahl größer ist als 27, wird die Differenz mit 2
+        multipliziert
+      </p>
+      <form>
+        <label for="num">Gib hier deine Zahl ein:</label>
+        <input type="number" id="num" />
+        <button onclick="getDifference() ; return false">Differenz</button>
+      </form>
+      <p class="outputDifference"></p>
+    </section>
+
+    <!-- #level 2_2 Luftqualität -->
+    <section>
+      <h2>Prüfe die Luftqualität:</h2>
+      <form>
+        <input
+          type="range"
+          id="aqi"
+          min="0"
+          max="150"
+          step="1"
+          onchange="checkAirQuality() ; return false"
+        />
+      </form>
+      <p class="outputText1"></p>
+      <p class="outputText2"></p>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
